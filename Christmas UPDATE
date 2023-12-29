@@ -118,20 +118,17 @@ MiscTab:AddButton({
   	end    
 })
 
-local MiscTab = Window:MakeTab({
+MiscTab:AddButton({
 	Name = "🎅 Santa 🎅",
-	Icon = "rbxassetid://4483345998",
-	PremiumOnly = false
+	Callback = function()
+      		print("button pressed")
+  	end    
 })
 
-local SantaSection = SantaTab:AddSection({
-	Name = "A message from santa!"
-})
-
-SantaTab:AddButton({
+MiscTab:AddButton({
 	Name = "Merry Christmas!",
 	Callback = function()
-          print("MarryChristmas!")
+      		print("button pressed")
   	end    
 })
 end
